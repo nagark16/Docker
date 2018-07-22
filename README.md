@@ -2,11 +2,11 @@
 
 ## Installing docker
 
-	 apt-get update
-	 sh -c "echo deb https://apt.dockerproject.org/repo ubuntu-xenial main > /etc/apt/sources.list.d/docker.list" 
-	 apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
-	 apt-get update
-	 apt-get install -y docker-engine
+	* apt-get update
+	* sh -c "echo deb https://apt.dockerproject.org/repo ubuntu-xenial main > /etc/apt/sources.list.d/docker.list" 
+	* apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
+	* apt-get update
+	* apt-get install -y docker-engine
 
 ## Basic commands
 
@@ -56,4 +56,3 @@
 	docker network ls #lists type of networks created. by default it is loopback(none), bridge, host
 	docker run --rm --net=none busybox ip addr # run busybox with network configured to none and printing ip address (by 'ip addr')of the container
 	docker network inspect bridge
-	
